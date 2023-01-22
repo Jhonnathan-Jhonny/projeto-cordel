@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --font-texto: 'Sriracha', cursive;
+    --font-titulo:'Passion One', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100vh;
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+    font-weight: bolder;
+    font-family: var(--font-titulo);
+}
+
+header > p {
+    padding: 50px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a>strong:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font-texto);
+    font-size: 3.5vw;
+    font-weight: bold;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    letter-spacing: 1px;
+    padding-left: 30px;
+}
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+
+}
+
+section.imagem {
+    background-color: rgb(83, 82, 82);
+    color: white;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.432);
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.384);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);  
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer  a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a>strong:hover {
+    text-decoration: underline;
+}
